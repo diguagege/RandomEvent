@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:coin="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <com.diguagege.toolbox.coin.CoinView
+            android:id="@+id/tiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:layout_centerInParent="true"
+            android:background="@drawable/front"
+            coin:circleCount="@integer/coin_default_circleCount"
+            coin:duration="@integer/coin_default_duration"
+            coin:frontDrawable="@drawable/front"
+            coin:result="front"
+            coin:reverseDrawable="@drawable/reverse"
+            coin:startOffset="@integer/coin_default_startOffset"
+            coin:xAxisDirection="clockwise"
+            coin:yAxisDirection="clockwise"
+            coin:zAxisDirection="clockwise" />
+
+        <Button
+            android:id="@+id/start"
+            android:text="开始"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</LinearLayout>
